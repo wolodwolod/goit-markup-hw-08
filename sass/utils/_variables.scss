@@ -1,0 +1,26 @@
+/* цвет заголовков #212121 */
+/* цвет текста   #757575; */
+/* белый #FFFFFF  */
+/* вторичный цвет фона #F5F4FA; */
+/* акцент #2196F3 */
+/* цвет фона Героя #2F303A */
+
+:root {
+  --title-text-color: #212121;
+  --primary-text-color: #757575;
+  --primary-white-color: #ffffff;
+  --primary-black-color: #000;
+  --second-background-color: #f5f4fa;
+  --dark-background-color: #2f303a;
+  --accent-color: #2196f3;
+  --accent-color-2: #188ce8;
+  --opasity-light-color: rgba(255, 255, 255, 0.6);
+  --border-color: #eeeeee;
+  --border-header-color: #ececec;
+  --social-links-color: #afb1b8;
+  --opasity-dark-color: rgba(255, 255, 255, 0.1);
+  --work-label-background: rgba(47, 48, 58, 0.8);
+  --port-overlay-color: rgba(33, 150, 243, 0.9);
+  --backdrop-bg-color: rgba(0, 0, 0, 0.2);
+  /* --number: 3; */
+}

@@ -1,0 +1,45 @@
+/* <!-- Feature --> */
+.feature {
+  &-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  &-list {
+    display: flex;
+
+    &__item {
+      width: 270px;
+    }
+    &__item:not(:nth-child(4n)) {
+      margin-right: 30px;
+      /* --number:4 */
+    }
+
+    &__thumb {
+      display: flex;
+      height: 120px;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--second-background-color);
+
+      margin-bottom: 30px;
+      border-radius: 4px;
+      color: var(--title-text-color);
+    }
+    &__thumb:hover {
+      color: var(--accent-color);
+    }
+    &__icon {
+      fill: currentColor;
+    }
+
+    & .title {
+      color: var(--title-text-color);
+      font-size: 14px;
+      line-height: 1.14;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+  }
+}

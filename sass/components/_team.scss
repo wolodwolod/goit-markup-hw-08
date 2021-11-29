@@ -1,0 +1,64 @@
+/* Team */
+.team {
+  &-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--second-background-color);
+  }
+
+  &-list {
+    display: flex;
+
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &-member {
+    background: #ffffff;
+    /* material shadow v1 */
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &-member:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+  &-member img {
+    width: 270px;
+  }
+  &-member__title {
+    color: var(--title-text-color);
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+  }
+  &-member__text {
+    padding: 30px 42px;
+  }
+}
+.social-links {
+  display: flex;
+  margin-top: 16px;
+}
+
+.social-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link:hover,
+.social-link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link-icon {
+  fill: currentColor;
+}

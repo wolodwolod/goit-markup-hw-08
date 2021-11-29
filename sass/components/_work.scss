@@ -1,0 +1,42 @@
+/* Work */
+.work {
+  &-section {
+    padding-bottom: 94px;
+  }
+  &-list {
+    display: flex;
+
+    &__item {
+      width: 370px;
+      display: block;
+
+      position: relative;
+    }
+    &__item:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+
+    &__label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 70px;
+
+      background: var(--work-label-background);
+    }
+    &__label .title {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      color: var(--primary-white-color);
+    }
+    /* .work-list .grid {
+  --number: 4;
+} */
+  }
+}
