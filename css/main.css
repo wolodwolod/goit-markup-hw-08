@@ -323,6 +323,12 @@ body {
   }
 }
 
+.menu-nav__list {
+  display: block;
+  margin-bottom: 200px;
+  text-align: start;
+}
+
 .menu-nav__item {
   font-weight: 500;
   font-size: 40px;
@@ -338,6 +344,11 @@ body {
 
 .menu-nav__link--current {
   color: var(--accent-color);
+}
+
+.menu-contacts {
+  display: block;
+  text-align: start;
 }
 
 .menu-contacts__tel {
