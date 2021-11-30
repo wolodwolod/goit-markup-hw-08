@@ -1,18 +1,44 @@
 /* <!-- Feature --> */
 .feature {
   &-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
+
   &-list {
-    display: flex;
+    @media screen and (max-width: 767px) {
+      display: block;
+      margin-top: -15px;
+      margin-bottom: -15px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin: -15px;
+    }
 
     &__item {
-      width: 270px;
-    }
-    &__item:not(:nth-child(4n)) {
-      margin-right: 30px;
-      /* --number:4 */
+      @media screen and (max-width: 767px) {
+        width: 450px;
+        margin: 15px auto;
+      }
+      @media screen and (min-width: 767px) and (max-width: 1199px) {
+        width: 354px;
+        margin: 15px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        margin: 15px;
+      }
     }
 
     &__thumb {

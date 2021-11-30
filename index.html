@@ -24,9 +24,38 @@
         <!-- site-nav, logo -->
 
         <nav class="site-nav">
-          <a lang="en" class="logo header-logo" href="./index.html"
-            >Web<span class="header-logo__studio">Studio</span></a
+          <a lang="en" class="logo site-nav__logo" href="./index.html"
+            >Web<span class="site-nav__logo--studio">Studio</span></a
           >
+
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-cross"
+                href="./images/icons1.svg#icon-close-button"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/icons1.svg# icon-menu.svg"
+              ></use>
+            </svg>
+          </button>
+
+          <!-- <div class="menu-container" id="menu-container" data-menu>
+            <div class="navigation"></div>
+            <div class="contacts"></div>
+          </div> -->
+
           <ul class="list site-nav__list">
             <li class="item site-nav__item">
               <a
@@ -41,7 +70,7 @@
               >
             </li>
             <li class="item site-nav__item">
-              <a href="./contacts.html" class="link site-nav__link">Контакты</a>
+              <a href="./index.html" class="link site-nav__link">Контакты</a>
             </li>
           </ul>
         </nav>
