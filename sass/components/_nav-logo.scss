@@ -1,12 +1,18 @@
 .site-nav {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 
   &__logo {
-    margin-right: 93px;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 767px) {
+      margin-right: 0px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-right: 88px;
     }
+    margin-right: 93px;
 
     &--studio {
       color: var(--primary-black-color);
@@ -78,6 +84,13 @@
     display: none;
   }
 }
+.menu-button:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+.menu-button svg {
+  fill: currentColor;
+}
 
 .menu-button .icon-cross {
   display: none;
@@ -92,8 +105,9 @@
 }
 
 .menu-container {
-  background-color: palegoldenrod;
-  padding: 20px;
+  z-index: 9999;
+  background-color: var(--primary-white-color);
+  padding: 40px;
   text-align: center;
   font-size: 20px;
 
@@ -110,22 +124,63 @@
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: none;
     justify-content: space-between;
     flex-grow: 1;
   }
 }
-
-.navigation,
-.contacts {
-  height: 50px;
-  width: 140px;
+.menu-nav__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
 }
-
-.navigation {
-  outline: 1px solid teal;
+.menu-nav__link {
+  text-decoration: none;
+  color: var(--title-text-color);
 }
+.menu-nav__link--current {
+  color: var(--accent-color);
+}
+.menu-contacts__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
 
-.contacts {
-  outline: 1px solid orange;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+.menu-contacts__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.menu-social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+.menu-social-links {
+  display: flex;
+  margin-top: 64px;
+  justify-content: center;
+}
+.menu-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.menu-social-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.menu-social-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }

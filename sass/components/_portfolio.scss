@@ -8,11 +8,21 @@
   /* Portfolio filter */
 
   &-filter {
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: start;
+      margin-bottom: 35px;
+    }
+
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 
     &__button {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+      }
+
       display: block;
       padding: 6px 22px;
       border-color: transparent;
@@ -52,14 +62,39 @@
     margin-bottom: -30px;
   }
   &-list {
-    display: flex;
-    flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
+      display: block;
+      margin-top: -15px;
+      margin-bottom: -15px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      margin: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin: -15px;
+    }
   }
   &-list img {
-    width: 370px;
+    width: 100%;
   }
   &-item {
-    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      width: 450px;
+      margin: 15px auto;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 354px;
+
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      margin: 15px;
+    }
 
     background: var(--primary-white-color);
   }
@@ -67,9 +102,6 @@
   /* .portfolio-item:nth-last-of-type(-n + 3) {
   margin-bottom: 0;
 } */
-  &-item:not(:nth-child(3n)) {
-    margin-right: 30px;
-  }
 
   &-thumb {
     display: block;
@@ -128,6 +160,7 @@
       letter-spacing: 0.06em;
     }
     &__label {
+      height: 150px;
       padding: 20px 24px;
 
       border-right: 1px solid var(--border-color);

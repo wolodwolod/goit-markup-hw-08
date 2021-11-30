@@ -1,20 +1,50 @@
 /* Clients */
 .clients {
   &-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
   &-links {
-    display: flex;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -15px;
+      margin-bottom: -15px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin: -15px;
+    }
   }
   &-item {
     display: flex;
     width: 170px;
     height: 92px;
+
+    @media screen and (max-width: 767px) {
+      width: 210px;
+      margin: 15px auto;
+    }
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      width: 226px;
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      margin: 15px;
+    }
   }
-  &-item:not(:last-child) {
-    margin-right: 30px;
-  }
+
   &-link:hover,
   &-link:focus {
     color: var(--accent-color);
