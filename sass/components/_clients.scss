@@ -13,8 +13,7 @@
     @media screen and (max-width: 767px) {
       display: flex;
       flex-wrap: wrap;
-      margin-top: -15px;
-      margin-bottom: -15px;
+      margin: -15px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
@@ -28,12 +27,12 @@
   }
   &-item {
     display: flex;
-    width: 170px;
+
     height: 92px;
 
     @media screen and (max-width: 767px) {
       width: 210px;
-      margin: 15px auto;
+      margin: 15px;
     }
     @media screen and (min-width: 767px) and (max-width: 1199px) {
       width: 226px;

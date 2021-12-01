@@ -113,6 +113,10 @@
       margin-right: 0;
     }
 
+    @media screen and (max-width: 767px) {
+      max-width: 358px;
+    }
+
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
