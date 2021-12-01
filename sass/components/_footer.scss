@@ -25,22 +25,15 @@
     }
   }
 
-  .logo-address {
-    @media screen and (max-width: 1199px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      margin-bottom: 60px;
-    }
-  }
-
   .footer-logo {
     @media screen and (max-width: 1199px) {
       text-align: center;
     }
-  }
 
+    &__studio {
+      color: var(--primary-white-color);
+    }
+  }
   address {
     font-style: normal;
     @media screen and (max-width: 1199px) {
@@ -83,7 +76,24 @@
     margin-top: 20px;
   }
 }
+.logo-address {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+    margin-bottom: 60px;
+  }
+}
+.footer-logo {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  &__studio {
+    color: var(--primary-white-color);
+  }
+}
 .social-link--footer {
   color: var(--primary-white-color);
   background-color: var(--opasity-dark-color);
